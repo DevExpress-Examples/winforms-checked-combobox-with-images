@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CheckedImageComboBoxEdit.cs](./CS/WindowsApplication3/CheckedImageComboBoxEdit.cs) (VB: [CheckedImageComboBoxEditPainter.vb](./VB/WindowsApplication3/CheckedImageComboBoxEditPainter.vb))
+* [CheckedImageComboBoxEditPainter.cs](./CS/WindowsApplication3/CheckedImageComboBoxEditPainter.cs) (VB: [CheckedImageComboBoxEditPainter.vb](./VB/WindowsApplication3/CheckedImageComboBoxEditPainter.vb))
+* [Main.cs](./CS/WindowsApplication3/Main.cs) (VB: [Main.vb](./VB/WindowsApplication3/Main.vb))
+* [Program.cs](./CS/WindowsApplication3/Program.cs) (VB: [Program.vb](./VB/WindowsApplication3/Program.vb))
+* [RepositoryItemCheckedImageComboBoxEdit.cs](./CS/WindowsApplication3/RepositoryItemCheckedImageComboBoxEdit.cs) (VB: [RepositoryItemCheckedImageComboBoxEdit.vb](./VB/WindowsApplication3/RepositoryItemCheckedImageComboBoxEdit.vb))
+<!-- default file list end -->
 # How to show images in the CheckedComboBoxEdit edit box and its dropdown window
 
 
