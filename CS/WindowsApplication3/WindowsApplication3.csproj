@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,6 +10,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DXSample</RootNamespace>
     <AssemblyName>WindowsApplication3</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,27 +38,35 @@
     <Reference Include="Accessibility" />
     <Reference Include="DevExpress.Data.v9.2, Version=9.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v9.2, Version=9.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v9.2, Version=9.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v9.2, Version=9.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v9.2, Version=9.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v9.2, Version=9.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraTreeList.v9.2, Version=9.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraVerticalGrid.v9.2, Version=9.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraVerticalGrid.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -63,11 +77,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckedImageComboBoxEditPainter.cs"></Compile>
-    <Compile Include="nwindDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>nwindDataSet1.xsd</DependentUpon>
+    <Compile Include="CheckedImageComboBoxEditPainter.cs">
     </Compile>
     <Compile Include="RepositoryItemCheckedImageComboBoxEdit.cs">
       <SubType>Component</SubType>
@@ -97,17 +107,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
-    <None Include="nwindDataSet1.xsc">
-      <DependentUpon>nwindDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="nwindDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>nwindDataSet1.Designer.cs</LastGenOutput>
+    <None Include="app.config">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="nwindDataSet1.xss">
-      <DependentUpon>nwindDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -120,9 +121,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="nwind.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\convert_32x32.png" />
+    <None Include="Resources\about_32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

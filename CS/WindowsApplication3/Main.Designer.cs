@@ -27,17 +27,14 @@ namespace DXSample {
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nwindDataSet1 = new DXSample.nwindDataSet1();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colCategoryID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCategoryName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPicture = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemPictureEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.checkedImageComboBoxEdit2 = new DXSample.CheckedImageComboBoxEdit();
-            this.categoriesTableAdapter = new DXSample.nwindDataSet1TableAdapters.CategoriesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedImageComboBoxEdit2.Properties)).BeginInit();
@@ -63,12 +60,6 @@ namespace DXSample {
             // categoriesBindingSource
             // 
             this.categoriesBindingSource.DataMember = "Categories";
-            this.categoriesBindingSource.DataSource = this.nwindDataSet1;
-            // 
-            // nwindDataSet1
-            // 
-            this.nwindDataSet1.DataSetName = "nwindDataSet1";
-            this.nwindDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView2
             // 
@@ -124,10 +115,6 @@ namespace DXSample {
             this.checkedImageComboBoxEdit2.Size = new System.Drawing.Size(395, 22);
             this.checkedImageComboBoxEdit2.TabIndex = 1;
             // 
-            // categoriesTableAdapter
-            // 
-            this.categoriesTableAdapter.ClearBeforeFill = true;
-            // 
             // Main
             // 
             this.ClientSize = new System.Drawing.Size(1013, 564);
@@ -138,7 +125,6 @@ namespace DXSample {
             this.Load += new System.EventHandler(this.OnFormLoad);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedImageComboBoxEdit2.Properties)).EndInit();
@@ -153,9 +139,7 @@ namespace DXSample {
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit2;
         private CheckedImageComboBoxEdit checkedImageComboBoxEdit2;
-        private nwindDataSet1 nwindDataSet1;
         private System.Windows.Forms.BindingSource categoriesBindingSource;
-        private DXSample.nwindDataSet1TableAdapters.CategoriesTableAdapter categoriesTableAdapter;
         private DevExpress.XtraGrid.Columns.GridColumn colCategoryID;
         private DevExpress.XtraGrid.Columns.GridColumn colCategoryName;
         private DevExpress.XtraGrid.Columns.GridColumn colPicture;
