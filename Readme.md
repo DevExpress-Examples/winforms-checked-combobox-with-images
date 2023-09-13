@@ -11,7 +11,7 @@ In this example, the [CheckedComboBoxEdit](https://docs.devexpress.com/WindowsFo
 * To show images in the dropdown window, use the [Properties.ImageMember](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.BaseImageListBoxControl.ImageMember) property to specify the name of a data field with images (`Image` objects or a byte array).
 * Enable the `RepositoryItemCheckedImageComboBoxEdit.ShowImagesInEditBox` option to display images in the edit box.
 
-![WinForms Checked Combobox - Show images in the edit box and dropdown window](https://github.com/DevExpress-Examples/how-to-show-images-in-the-checkedcomboboxedit-edit-box-and-its-dropdown-window-e2804/blob/13.1.4%2B/media/winforms-checked-combobox-with-images.png)
+![WinForms Checked Combobox - Show images in the edit box and dropdown window](https://raw.githubusercontent.com/DevExpress-Examples/winforms-checked-combobox-with-images/13.1.4%2B/media/winforms-checked-combobox-with-images.png)
 
 
 ## Files to Review
