@@ -3,20 +3,25 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2804)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WinForms Checked Combobox - Show images in the edit box and dropdown window
+
+In this example, the [CheckedComboBoxEdit](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.CheckedComboBoxEdit) is bound to a data source. The examples creates a custom editor (`CheckedImageComboBoxEdit`) that can display images in the edit box and dropdown window.
+
+* To show images in the dropdown window, use the [Properties.ImageMember](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.BaseImageListBoxControl.ImageMember) property to specify the name of a data field with images (`Image` objects or a byte array).
+* Enable the `RepositoryItemCheckedImageComboBoxEdit.ShowImagesInEditBox` option to display images in the edit box.
+
+![WinForms Checked Combobox - Show images in the edit box and dropdown window](https://github.com/DevExpress-Examples/how-to-show-images-in-the-checkedcomboboxedit-edit-box-and-its-dropdown-window-e2804/blob/13.1.4%2B/media/winforms-checked-combobox-with-images.png)
+
+
+## Files to Review
 
 * [CheckedImageComboBoxEdit.cs](./CS/WindowsApplication3/CheckedImageComboBoxEdit.cs) (VB: [CheckedImageComboBoxEdit.vb](./VB/WindowsApplication3/CheckedImageComboBoxEdit.vb))
 * [CheckedImageComboBoxEditPainter.cs](./CS/WindowsApplication3/CheckedImageComboBoxEditPainter.cs) (VB: [CheckedImageComboBoxEditPainter.vb](./VB/WindowsApplication3/CheckedImageComboBoxEditPainter.vb))
 * [Main.cs](./CS/WindowsApplication3/Main.cs) (VB: [Main.vb](./VB/WindowsApplication3/Main.vb))
-* [Program.cs](./CS/WindowsApplication3/Program.cs) (VB: [Program.vb](./VB/WindowsApplication3/Program.vb))
 * [RepositoryItemCheckedImageComboBoxEdit.cs](./CS/WindowsApplication3/RepositoryItemCheckedImageComboBoxEdit.cs) (VB: [RepositoryItemCheckedImageComboBoxEdit.vb](./VB/WindowsApplication3/RepositoryItemCheckedImageComboBoxEdit.vb))
-<!-- default file list end -->
-# How to show images in the CheckedComboBoxEdit edit box and its dropdown window
 
 
-<p>This examples demonstrates how to display images in the CheckedComboBoxEdit edit box and its dropdown window when the editor is used in bound mode. This task is accomplished at an editor descendant level. </p><p>To show images in the dropdown window, it is necessary to set the <strong>RepositoryItemCheckedImageComboBoxEdit.ImageMember property</strong> to a column name whose values represent Image objects or a byte array. If you wish to display these images in the edit box, you should also set the <strong>RepositoryItemCheckedImageComboBoxEdit.ShowImagesInEditBox pro</strong><strong>p</strong><strong>erty</strong> to true.</p>
+## Documentation
 
-<br/>
-
-
+* [Custom Editors](https://docs.devexpress.com/WindowsForms/4716/controls-and-libraries/editors-and-simple-controls/common-editor-features-and-concepts/custom-editors)
