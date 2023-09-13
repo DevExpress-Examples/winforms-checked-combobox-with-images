@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WinForms Checked Combobox - Show images in the edit box and dropdown window
+# WinForms Checked ComboBox - Show images in the edit box and dropdown window
 
 In this example, the [CheckedComboBoxEdit](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.CheckedComboBoxEdit) is bound to a data source. The examples creates a custom editor (`CheckedImageComboBoxEdit`) that can display images in the edit box and dropdown window.
 
