@@ -10,6 +10,7 @@ using DevExpress.XtraEditors.Drawing;
 using DevExpress.XtraEditors.ViewInfo;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.Utils.Text;
+using DevExpress.Utils.Drawing;
 
 
 namespace DXSample {
@@ -34,7 +35,7 @@ namespace DXSample {
             foreach(string val in values) {
                 int index = GetIndexByDescription(edit.GetItems(), val.Trim());
                 if(index != -1) {
-                    DrawImage(edit, info.Graphics, index, ref valRect);
+                    DrawImage(edit, info.Cache, index, ref valRect);
                    
                 }
                 string str = val;
@@ -52,12 +53,12 @@ namespace DXSample {
             valRect.X += width;
         }
 
-        private void DrawImage(RepositoryItemCheckedImageComboBoxEdit edit, Graphics gr, int index, ref Rectangle valRect) {
+        private void DrawImage(RepositoryItemCheckedImageComboBoxEdit edit, GraphicsCache cache, int index, ref Rectangle valRect) {
             Image image = edit.GetItemImage(index);
             Rectangle rect = new Rectangle(valRect.X, valRect.Y, RepositoryItemCheckedImageComboBoxEdit.ImageWidth,
                 RepositoryItemCheckedImageComboBoxEdit.ImageHeight);
             if(image != null) {
-                gr.DrawImage(image, rect);
+                cache.DrawImage(image, rect);
                 valRect.X += RepositoryItemCheckedImageComboBoxEdit.ImageWidth + 2;
             }
         }

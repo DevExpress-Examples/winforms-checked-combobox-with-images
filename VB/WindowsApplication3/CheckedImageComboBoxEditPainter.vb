@@ -11,6 +11,7 @@ Imports DevExpress.XtraEditors.Drawing
 Imports DevExpress.XtraEditors.ViewInfo
 Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.Utils.Text
+Imports DevExpress.Utils.Drawing
 
 
 Namespace DXSample
@@ -39,9 +40,9 @@ Namespace DXSample
             For Each val As String In values
                 Dim index As Integer = GetIndexByDescription(edit.GetItems(), val.Trim())
                 If index <> -1 Then
-                    DrawImage(edit, info.Graphics, index, valRect)
+					DrawImage(edit, info.Cache, index, valRect)
 
-                End If
+				End If
                 Dim str As String = val
                 If Array.IndexOf(values, val) < values.Length - 1 Then
                     str = String.Concat(val, edit.SeparatorChar)
@@ -57,11 +58,11 @@ Namespace DXSample
             valRect.X += width
         End Sub
 
-		Private Sub DrawImage(ByVal edit As RepositoryItemCheckedImageComboBoxEdit, ByVal gr As Graphics, ByVal index As Integer, ByRef valRect As Rectangle)
+		Private Sub DrawImage(ByVal edit As RepositoryItemCheckedImageComboBoxEdit, ByVal cache As GraphicsCache, ByVal index As Integer, ByRef valRect As Rectangle)
 			Dim image As Image = edit.GetItemImage(index)
 			Dim rect As New Rectangle(valRect.X, valRect.Y, RepositoryItemCheckedImageComboBoxEdit.ImageWidth, RepositoryItemCheckedImageComboBoxEdit.ImageHeight)
 			If image IsNot Nothing Then
-				gr.DrawImage(image, rect)
+				cache.DrawImage(image, rect)
 				valRect.X += RepositoryItemCheckedImageComboBoxEdit.ImageWidth + 2
 			End If
 		End Sub
